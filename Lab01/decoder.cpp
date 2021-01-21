@@ -22,7 +22,7 @@ std::string string_to_hex(const std::string & input)
 // you should start your debugging here with a breakpoint
 std::string ReverseText(std::string & msg, int start = 0, int end = -1)
 {
-	if (end  ==  -1) end = msg.length() - 1;  // init case
+	if (end  ==  -1) end = (int)msg.length() - 1;  // init case
 	if (end < start) return msg;             // base case
 	else
 	{
