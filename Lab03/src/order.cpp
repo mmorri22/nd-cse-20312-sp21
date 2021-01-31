@@ -6,18 +6,18 @@ Order::Item::Item(const std::string& n, int c)
 {
 }
 
-// TODO - Part 2 - Constructor for Order
+// TODO - Part 2 - Constructor for Order - Member Initialization List
 Order::Order()
 {
 }
 
-// TODO - Part 2 - Constructor which allocates one item
+// TODO - Part 2 - Constructor which allocates one item - Member Initialization List
 Order::Order(const std::string& name)
 {
 	mItems.push_back(new Item(name, 1));
 }
 
-// Copy Constructor - Part 3
+// Copy Constructor - Part 4
 Order::Order(const Order &rhs)
 {
 	// TODO
@@ -26,6 +26,12 @@ Order::Order(const Order &rhs)
 Order::~Order()
 {
 	clearOrder();
+}
+
+// Deletes all items in variable ITEMS. - Part 3
+void Order::clearOrder()
+{
+	// TODO
 }
 
 // Prints all items and their amounts.
@@ -47,13 +53,7 @@ void Order::displayOrder() const
 	}
 }
 
-// Deletes all items in variable ITEMS. - Part 2
-void Order::clearOrder()
-{
-	// TODO
-}
-
-// Assigns Order RHS values to the current Order's values - Part 4
+// Assigns Order RHS values to the current Order's values - Part 5
 Order& Order::operator=(const Order &rhs)
 {
 	// Starter code: self-assignment can cause unseen problems. It won't
@@ -62,11 +62,14 @@ Order& Order::operator=(const Order &rhs)
 		return *this;
 
 	// TODO
+	
+	
+	/* Return the result */
 	return *this;
 }
 
 /* 
-Part 4
+Part 5
 This operator should create a new Order that represents the
 combined outcome of the current Order and the Order passed in via
 parameter.
@@ -80,5 +83,6 @@ Order Order::operator+(const Order &rhs) const
 
 	// TODO
 
+	/* Return the result */
 	return result;
 }
