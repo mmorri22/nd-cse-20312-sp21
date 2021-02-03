@@ -9,7 +9,7 @@ CXXFLAGS := -m64 -std=c++11 $(FLAGS)
 
 # Folder Variables
 SRC := src
-INC := inc
+INC := include
 OBJ := objects
 EXE := executables
 
