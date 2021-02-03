@@ -1,7 +1,7 @@
 # Author: Matthew Morrison
 # E-mail: matt.morrison@nd.edu
 #
-# This is the Makefile for Lecture 01 - CSE 20312
+# This is the Makefile for Lab 02 - Part 2 - CSE 20312
 
 # G++ is for the GCC compiler for C++
 PP := g++
@@ -12,7 +12,7 @@ CXXFLAGS := -m64 -std=c++11 -Weffc++ $(FLAGS)
 
 # Folder Variables
 SRC := src
-INC := inc
+INC := include
 OBJ := objects
 EXE := executables
 
