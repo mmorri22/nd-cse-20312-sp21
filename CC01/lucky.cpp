@@ -39,10 +39,10 @@ int main (int argc, char** argv)
 
 	/* Recursive call */	
 	if( increasing( input_integer ) ) 
-		std::cout << "Increasing order." << std::endl;
+		std::cout << "Increasing order" << std::endl;
 
 	else 
-		std::cout << "Not increasing order." << std::endl;
+		std::cout << "Not increasing order" << std::endl;
 
 
 	return 0;
