@@ -19,7 +19,7 @@ void ReverseText(std::string & msg, int start = 0, int end = -1)
 		msg[start] = msg[end];
 		msg[end]   = swap_char;
 		
-		ReverseText(msg, start++, end--);
+		ReverseText(msg, --start, ++end);
 	}
 }
 
